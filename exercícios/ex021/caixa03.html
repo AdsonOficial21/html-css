@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borda personalizada</title>
+    <style>
+        h1 { /*TÍTULO*/
+            border: 12px solid transparent; /* BORDA*/
+            padding: 10px; /*CIMA 10px*/ /*DIREITA 10px*/ /*INFERIOR 10px*/ /*ESQUERDA 10px*/
+            border-image-source: url("borda.png"); /*INSERIR IMAGEM DA BORDA*/
+            border-image-slice: 27; /*FATIAR BORDA*/
+            border-image-repeat: repeat; /*REPETIR BORDA*/
+
+            border-image: url("borda.png") 27 repeat; /*INSERIR IMAGEM DA BORDA, FATIAR BORDA, REPETIR BORDA*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de borda</h1>
+</body>
+</html>

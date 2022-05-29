@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header { /*CABEÇALHO*/
+            background-color: white; /*COR DE FUNDO*/
+            padding: 10px; /*PREENCHIMENTO CIMA*/
+            margin: 10px; /*CIMA 10px*/ /*DIREITA 10px*/ /*INFERIOR 10px*/ /*ESQUERDA 10px*/
+        }
+
+        main { /*?*/
+            background-color: white; /*COR DE FUNDO*/
+            padding: 10px; /*CIMA 10px*/ /*DIREITA 10px*/ /*INFERIOR 10px*/ /*ESQUERDA 10px*/
+            margin: 10px; /*CIMA 10px*/ /*DIREITA 10px*/ /*INFERIOR 10px*/ /*ESQUERDA 10px*/
+            border-radius: 20px; /*CIMA 20px*/ /*DIREITA 20px*/ /*INFERIOR 20px*/ /*ESQUERDA 20px*/
+            box-shadow: 4px 4px 4px 4px; /*?*/
+            
+        }
+
+        footer { /*RODAPÉ*/
+            background-color: black; /*COR DE FUNDO*/
+            color: white; /*MUDAR A COR DO TEXTO*/
+            text-align: center; /*CENTRALIZAR O TEXTO*/
+            padding: 4px; /*CIMA 4px*/ /*DIREITA 4px*/ /*INFERIOR 4px*/ /*ESQUERDA 4px*/
+            margin: 0px; /*CIMA 0px*/ /*DIREITA 0px*/ /*INFERIOR 0px*/ /*ESQUERDA 0px*/
+        }
+
+        article { /*ARTIGO*/
+            background-color: lightgray; /*COR DE FUNDO*/
+            padding: 5px; /*CIMA 5px*/ /*DIREITA 5px*/ /*INFERIOR 5px*/ /*ESQUERDA 5px*/
+        }
+
+        article > aside { /* ARTIGO COM O FILHO ?*/
+            background-color: rgb(92, 92, 92); /*COR DE FUNDO*/
+        }
+
+        nav {
+            background-color: goldenrod; /*COR DE FUNDO*/
+            padding: 3px; /*CIMA 3px*/ /*DIREITA 3px*/ /*INFERIOR 3px*/ /*ESQUERDA 3px*/
+            box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.466); /*?*/
+        }
+
+        nav > a { /*?*/
+            text-decoration: none; /* DECORAÇÃO DO TEXTO*/
+            color: white; /*MUDAR A COR DO TEXTO*/
+            font-weight: bold; /*PESO DA FONTE*/
+            margin: 30px; /*CIMA 30px*/ /*DIREITA 30px*/ /*INFERIOR 30px*/ /*ESQUERDA 30px*/
+        }
+
+        nav > a:hover { /*?*/
+            text-decoration: underline; /* DECORAÇÃO DO TEXTO*/
+        }
+
+        footer > p { /*RODAPÉ COM O FILHO PARÁGRAFO*/
+            margin: 0px; /*CIMA 0px*/ /*DIREITA 0px*/ /*INFERIOR 0px*/ /*ESQUERDA 0px*/
+        }
+
+        div#bola { /*DIV COM ID BOLA*/
+            height: 100px; /*ALTURA*/
+            width: 100px; /*LARGURA*/
+            margin: 10px; /*CIMA 10px*/ /*DIREITA 10px*/ /*INFERIOR 10px*/ /*ESQUERDA 10px*/
+            background-color: white; /**/
+            border-radius: 50%; /* RAIO DA BORDA*/
+            background-color: white; /*COR DE FUNDO*/
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+            <p>Esportes Politicas Tecnologias</p>
+        </section>
+
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, dignissimos quasi voluptatem autem suscipit quae non! At illo alias, corporis, recusandae numquam aspernatur corrupti consequatur aperiam ullam quaerat, asperiores minus?</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+
+            <article>
+
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido pelo CursoemVídeo</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+
+</html>

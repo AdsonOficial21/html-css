@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none; /*TIRAR O SUBLINHADO DO TEXTO*/
+            font-weight: bold; /*DEIXAR TEXTO EM NEGRITO*/
+
+        }
+
+        a:visited /*visited SIGNIFICA QUE A COR SERÁ MUDADA QUANDO O LINK FOR VISITADO*/ {
+            color: darkred; /*MUDAR A COR DO TEXTO, QUANDO O LINK FOR VISITADO*/
+        }
+
+        a:hover /*hover SIGNIFICA MUDAR ALGO QUANDO O MOUSE PASSAR POR CIMA*/ {
+            color: black; /*MUDAR A COR DO TEXTO, QUANDO PASSAR O MOUSE POR CIMA DO TEXTO*/
+            text-decoration: underline; /*APARECER SUBLINHADO QUANDO PASSAR O MOUSE POR CIMA DO TEXTO*/
+        }
+
+        a:active /*active SIGNIFICA MUDAR A COR QUANDO ESTIVER EM UMA DETERMINADA PÁGINA*/ {
+            color: yellow; /*FICAR EM UMA DETERMINADA COR ESCOLHIDA, QUANDO O LINK FOR CLIKADO, EXEMPLO: A PESSOA ESTÁ NA PÁGINA PROGRAMAS DE PC, AI ELE FICA EM UMA DETERMINADA COR ESCOLHIDA, MAIS QUANDO FOR PARA APLICATIVOS DE CELULAR, AI ESSA PÁGINA APLICATIVO DE CELULAR, FICA NA COR DETERMINADA*/
+        }
+
+        .especial::before /*before SIGNIFICA ANTES DO TEXTO*/ {
+            content: " ⇒"; /*ESSE SETINHA PARA A DIREITA, IRÁ APARECER NO INÍCIO DO LINK*/
+        } 
+        
+        .especial {
+            background-color: rgba(255, 0, 0, 0.349);
+        }
+        
+        .especial::after /*after SIGNIFICA DEPOIS DO TEXTO*/ { 
+            content: " (LINK)"; /*ESSE NOME LINK, IRÁ APARECER NO FINAL DO LINK*/
+            text-decoration: none; /*REMOVER DECORAÇÃO DO TEXTO*/
+            font-weight: normal; /*DEIXAR TEXTO NORMAL*/
+            color: darkgray; /*MUDAR A COR DO TEXTO*/
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank" rel="external">Repósitorio GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external" class="especial">Canal do YouTube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank" rel="external" class="especial">Site do CursoemVídeo</a></li>
+    </ul>
+</body>
+</html>

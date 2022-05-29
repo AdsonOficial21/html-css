@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 {
+            display: inline; /*CONVERTER BOX-LEVEL PARA BOX-INLINE*/ /*QUANDO É INLINE, NÃO PODE BOTAR ALTURA E LARGURA*/
+            background-color: lightgrey; /*COR DE FUNDO*/
+            height: 300px; /*ALTURA*/
+            width: 300px; /*LARGURA*/
+            border-width: 10px; /*LARGURA DA BORDA*/
+            border-style: solid; /*ESTILO DA BORDA*/
+            border-color: darkslategray; /* COR DA BORDA*/
+
+            /*border: É USADO PARA ABREVIAR O (border-width:)(border-style:)(border-color:)*/
+            border: 10px solid darkslategray;
+
+            padding-top: 20px; /*PREENCHIMENTO CIMA*/
+            padding-right: 20px; /*PREENCHIMENTO DIREITA*/
+            padding-bottom: 40px; /*PREENCHIMENTO INFERIOR*/
+            padding-left: 20px; /*PREENCHIMENTO ESQUERDA*/
+
+            /*padding: É PARA ABREVIAR O (padding-top:)(padding-right:)(padding-bottom:)(padding-left:)*/
+            padding: /*CIMA*/10px /*DIREITA*/ 10px /*INFERIOR*/ 10px /*ESQUERDA*/ 10px;
+
+            margin-top: 10px; /*CIMA*/
+            margin-right: 10px; /*DIREITA*/
+            margin-bottom: 10px; /*INFERIOR*/
+            margin-left: 10px; /*ESQUERDA*/
+
+            /*margin: É PARA ABREVIAR O (margin-top:)(margin-right:)(margin-bottom:)(margin-left:)*/
+            margin: /*CIMA*/10px /*DIREITA*/ 10px /*INFERIOR*/ 10px /*ESQUERDA*/ 10px;
+
+            outline-width: 5px; /*LARGURA DO CONTORNO*/
+            outline-style: dashed; /*ESTILO DO CONTORNO*/
+            outline-color: blueviolet; /*COR DO CONTORNO*/
+
+            /*outline: É PARA ABREVIAR O (outline-width:) (outline-style:)(outline-color:)*/
+            outline: 5px dashed blueviolet;
+
+        }
+
+        a {
+            display: block; /*CONVERTER BOX-INLINE PARA BOX-LEVEL*/
+            border-width: 10px; /*LARGURA DA BORDA*/
+            border-style: solid; /*ESTILO DA BORDA*/
+            border-color: red; /*COR DA BORDA*/
+
+            /*border: É PARA ABREVIAR O (border-width:) (border-style:) (border-color:)*/
+            border: 10px solid red;
+
+            padding-top: 10px; /*PREENCHIMENTO CIMA*/
+            padding-right: 10px; /*PREENCHIMENTO DIREITA*/
+            padding-bottom: 10px; /*PREENCHIMENTO INFERIOR*/
+            padding-left: 10px; /*PREENCHIMENTO ESQUERDA*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>
+        Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p> 
+</body>
+</html>
